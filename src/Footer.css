@@ -1,0 +1,16 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.footerLogo {
+    width: 100px;
+    height: auto;
+}
+
+.footerText {
+    font-family: "Karla";
+    font-size: 0.8rem;
+}

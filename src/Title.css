@@ -1,0 +1,83 @@
+.titleBox {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+
+.titleBackground{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column: 1/ span 5;
+    grid-row: 1/ span 8;
+    background-color: #495E57;
+    padding: 1rem;
+
+}
+
+.food {
+    grid-column: 4;
+    grid-row: 2/ span 10;
+    padding-top: 2rem;
+}
+
+.restaurantDesc {
+    display: grid;
+    grid-template-rows: 1fr, 2fr, 1fr;
+    grid-column: 2;
+    align-content: center;
+}
+
+.name {
+    font-family: "Markazi";
+    font-display: Medium 64pt;
+    color: #F4CE14;
+    margin-bottom: 0;
+}
+
+
+.location {
+    margin-top: 0;
+    color:#EDEFEE;
+    font-family: "Markazi";
+    font-display: 40pt;
+}
+
+.description {
+    color: #EDEFEE;
+    font-family:"Karla";
+    font-display: 30pt;
+}
+
+.btn {
+    background-color: #F4CE14;
+    color: black;
+    border: #F4CE14;
+    border-radius: 12px;
+    padding: 10px;
+    font-family: "Karla";
+    font-size: 20px;
+}
+
+
+#foodPic {
+    border-radius: 20px;
+    width: 25vw;
+    min-width: 100px;
+    height: auto;
+}
+
+@media (max-width: 850px) {
+    .restaurantDesc {
+        grid-column: 1/ span 2;
+        font-size: 80%;
+    }
+
+    .food {
+        grid-column: 4/ span 5;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+}
+
