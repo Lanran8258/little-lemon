@@ -1,0 +1,125 @@
+.background {
+    background-color: #495E57;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr, 1fr, 2fr;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-top: 1rem;
+}
+
+.reserveInfo {
+    padding-bottom:5rem;
+}
+
+.info {
+    display: grid;
+    grid-row: 1;
+}
+
+.info .name {
+    font-size: 3rem;
+}
+
+.info .location {
+    font-size: 2rem;
+}
+
+.reservationPics {
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    column-gap: 2rem;
+}
+
+.reservePic {
+    width: 100%;
+    height: auto;
+}
+
+.reservationPics :nth-child(1) {
+    grid-column: 1;
+}
+
+.reservationPics :nth-child(2) {
+    grid-column: 2;
+}
+
+
+.reserveInfo {
+    grid-row: 3;
+    display: grid;
+}
+
+.info p {
+    color:#EDEFEE;
+    font-family: "Karla";
+    font-size: 2rem;
+}
+
+.form {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+    row-gap: 1rem;
+}
+
+.dateTime {
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+}
+
+.time {
+    grid-column: 2;
+}
+
+.data {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    font-size: 1.5rem;
+}
+
+::placeholder {
+    color: black;
+}
+
+.submitReserve {
+    font-size: 1.5rem;
+    border-radius: 10px;
+    background-color: #F4CE14;
+}
+
+
+
+@media (max-width: 530px) {
+    .info .name {
+        font-size: 2rem;
+    }
+    
+    .info .location {
+        font-size: 1rem;
+    }
+    .info p {
+        font-size: 1rem;
+    }
+    .data {
+        font-size: 1rem;
+    }
+    .submitReserve {
+        font-size: 1rem;
+    }
+}
+
+
+

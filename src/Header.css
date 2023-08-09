@@ -1,8 +1,12 @@
 .header {
     display: grid;
-    grid-template-columns: 1fr, 6fr;
+    grid-template-columns: 1fr, auto;
     align-items: center;
     margin-top: 1rem;
+    margin-bottom: 1rem;
+    justify-items: center;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 .logo {
@@ -15,53 +19,40 @@
 
 .nav {
     grid-column: 2;
+    display: inline-flex;
 }
-
-nav ul {
-    list-style: none;
-    font-size: 1.5rem;
-    text-align: center;
-  }
-  
-  nav ul li {
-    display: inline-block;
-  }
-  
-  nav ul a {
+  nav a {
+    font-style: none;
     color: #040404;
     text-decoration: none;
     padding-right: 1rem;
     padding-left: 1rem;
     font-family:"Karla";
+    font-size: 1rem;
   }
   
-  nav ul a:active {
-    text-decoration: underline;
-  }
-  
-  nav ul a:hover {
+  nav a:hover {
     text-decoration: underline;
     text-decoration-thickness: 0.1rem;
   }
-  @media (max-width: 850px) {
+  @media (max-width: 1120px) {
     .header {
       display: grid;
       grid-template-columns: 1fr;
+      justify-items: center;
+      row-gap: 1rem;
   }
 
     .logo {
       grid-column: 1;      
   }
 
-  #logoPic{
-    width: 20vw;
-    height: auto;
-  } 
+
  
   .nav {
       grid-column: 1;
   }
-    nav ul {
+    .nav {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       justify-content: center;

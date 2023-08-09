@@ -1,0 +1,31 @@
+.bookingPage {
+    display: grid;
+    grid-template-rows: 1fr, auto;
+    align-content: center;
+    padding-top: 1rem;
+    padding-bottom: 0;
+}
+
+.bookingHeader {
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 1rem;
+    justify-items: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+#MenuPic {
+    justify-self: left;
+}
+
+#BasketPic {
+    justify-self: right;
+}
+
+.bookingForm {
+    grid-row: 2;
+}
